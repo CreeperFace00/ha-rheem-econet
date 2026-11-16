@@ -31,9 +31,15 @@ Optional diagnostic sensors for unknown objects are created disabled.
 
 ## Install
 
-1. Copy `custom_components/rheem_econet` into your HA `config/custom_components/`.
-2. Restart Home Assistant.
-3. Go to Settings → Devices & services → Add integration → **Rheem / Ruud EcoNet**.
+**HACS (recommended):**
+
+1. In HACS, open the menu (⋮) → **Custom repositories**.
+2. Add `https://github.com/CreeperFace00/ha-rheem-econet` with type **Integration**.
+3. Find "Rheem / Ruud EcoNet" in HACS, download it, and restart Home Assistant.
+4. Go to Settings → Devices & services → Add integration → **Rheem / Ruud EcoNet**.
+
+**Manual:** copy `custom_components/rheem_econet` into your HA
+`config/custom_components/`, restart, then add the integration as in step 4.
 
 Options: refresh interval, and **Verify the MQTT broker's TLS certificate**
 (on by default). The broker's certificate chains to a DigiCert root that

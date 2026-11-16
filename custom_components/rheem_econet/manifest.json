@@ -1,12 +1,19 @@
 {
   "domain": "rheem_econet",
   "name": "Rheem / Ruud EcoNet (reverse-engineered)",
-  "codeowners": [],
+  "codeowners": [
+    "@CreeperFace00"
+  ],
   "config_flow": true,
-  "documentation": "https://github.com/",
+  "documentation": "https://github.com/CreeperFace00/ha-rheem-econet",
   "integration_type": "hub",
   "iot_class": "cloud_push",
-  "loggers": ["custom_components.rheem_econet"],
-  "requirements": ["paho-mqtt>=1.6.1"],
+  "issue_tracker": "https://github.com/CreeperFace00/ha-rheem-econet/issues",
+  "loggers": [
+    "custom_components.rheem_econet"
+  ],
+  "requirements": [
+    "paho-mqtt>=1.6.1"
+  ],
   "version": "0.1.0"
 }
