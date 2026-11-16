@@ -1,0 +1,12 @@
+{
+  "domain": "rheem_econet",
+  "name": "Rheem / Ruud EcoNet (reverse-engineered)",
+  "codeowners": [],
+  "config_flow": true,
+  "documentation": "https://github.com/",
+  "integration_type": "hub",
+  "iot_class": "cloud_push",
+  "loggers": ["custom_components.rheem_econet"],
+  "requirements": ["paho-mqtt>=1.6.1"],
+  "version": "0.1.0"
+}

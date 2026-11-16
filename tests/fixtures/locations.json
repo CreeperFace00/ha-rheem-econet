@@ -1,0 +1,70 @@
+{
+  "success": true,
+  "results": {
+    "locations": [
+      {
+        "@AWAY": false,
+        "@LOCATION_NAME": "Home",
+        "location_id": "loc-1",
+        "equiptments": [
+          {
+            "device_name": "1111222233334444",
+            "serial_number": "09-0c-12-13-0b-05-47-21-01",
+            "device_type": "WH",
+            "@TYPE": "heatpumpWaterHeaterGen5",
+            "@NAME": {"constraints": {"stringLength": 28}, "value": "Heat Pump Water Heater"},
+            "@CONNECTED": true,
+            "@ACTIVE": true,
+            "@AWAY": false,
+            "@ALERTCOUNT": 1,
+            "@RUNNING": "Running",
+            "@HOTWATER": "ic_tank_fourty_percent_v2.png",
+            "@SETPOINT": {
+              "constraints": {"lowerLimit": 110, "upperLimit": 140, "units": "deg F",
+                              "warning": [{"message": "CAUTION HOT WATER", "value": 120}]},
+              "value": 127
+            },
+            "@MODE": {
+              "constraints": {"enumText": ["Off", "Energy Saver", "Heat Pump", "High Demand", "Electric"],
+                              "lowerLimit": 0, "upperLimit": 4},
+              "status": "Heat Pump",
+              "value": 2
+            },
+            "actions": ["networkSettings", "waterheaterUsageReportView"]
+          },
+          {
+            "device_name": "5555666677778888",
+            "serial_number": "aa-bb",
+            "device_type": "WH",
+            "@TYPE": "tritonWaterHeater",
+            "@NAME": {"value": "Triton"},
+            "@CONNECTED": true,
+            "@SETPOINT": {"constraints": {"lowerLimit": 85, "upperLimit": 185, "units": "deg F"}, "value": 158},
+            "@MODE": {"constraints": {"enumText": ["Disabled      ", "Enabled       "]}, "status": "Enabled       ", "value": 1},
+            "@TANK": {"constraints": {"formatDecimal": 0, "lowerLimit": 0, "units": "%", "upperLimit": 100}, "value": 100},
+            "@HOURS": {"constraints": {"lowerLimit": 0, "units": "MIN", "upperLimit": 2147483647}, "value": 42},
+            "@LEAKACTION": {"constraints": {"enumText": ["Alarm Only          ", "Disable Water Heater"]}, "status": "Alarm Only          ", "value": 0},
+            "actions": []
+          },
+          {
+            "device_name": "9999000011112222",
+            "serial_number": "cc-dd",
+            "device_type": "HVAC",
+            "@TYPE": "econetControlCenter",
+            "@NAME": {"value": "Thermostat"},
+            "@CONNECTED": true,
+            "@SETPOINT": {"constraints": {"lowerLimit": 0, "units": "deg F", "upperLimit": 99}, "value": 72},
+            "@HEATSETPOINT": {"constraints": {"lowerLimit": 50, "units": "deg F", "upperLimit": 90}, "value": 70},
+            "@COOLSETPOINT": {"constraints": {"lowerLimit": 52, "units": "deg F", "upperLimit": 92}, "value": 78},
+            "@MODE": {"constraints": {"enumText": ["Heating       ", "Cooling       ", "Auto          ", "Fan Only      ", "Off           "]}, "status": "Auto          ", "value": 2},
+            "@FANSPEED": {"constraints": {"enumText": ["Off   ", "Low   ", "Medium", "High  "]}, "status": "Low   ", "value": 1},
+            "@HUMIDITY": {"constraints": {"units": "%", "lowerLimit": 0, "upperLimit": 100}, "value": 43},
+            "@DEHUMSETPOINT": {"constraints": {"lowerLimit": 40, "units": "%", "upperLimit": 60}, "value": 53},
+            "@STATUS": "Heating to 70 °",
+            "actions": ["thermostatUsageReportView"]
+          }
+        ]
+      }
+    ]
+  }
+}

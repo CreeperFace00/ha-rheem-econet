@@ -1,0 +1,47 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Sign in to EcoNet",
+        "description": "Use the same email and password as the Rheem or Ruud EcoNet app.",
+        "data": { "email": "Email", "password": "Password" }
+      },
+      "reauth_confirm": {
+        "title": "Re-authenticate EcoNet",
+        "data": { "password": "Password" }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid email or password.",
+      "cannot_connect": "Could not reach the EcoNet cloud."
+    },
+    "abort": {
+      "already_configured": "This EcoNet account is already configured.",
+      "reauth_successful": "Re-authentication successful."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "scan_interval": "Full refresh interval (seconds)",
+          "verify_mqtt_tls": "Verify the MQTT broker's TLS certificate"
+        },
+        "data_description": {
+          "verify_mqtt_tls": "The official app skips this check. Turn it off only if live updates and commands never connect."
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "alert_count": { "name": "Alerts" },
+      "hot_water": { "name": "Hot water available" },
+      "energy_today": { "name": "Energy today" }
+    },
+    "binary_sensor": {
+      "connected": { "name": "Connected" },
+      "heating": { "name": "Heating" }
+    }
+  }
+}
